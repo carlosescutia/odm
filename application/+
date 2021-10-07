@@ -1,0 +1,69 @@
+<div id="container">
+    <div id="header">
+        <h3>Dimensiones del plan</h3>
+    </div>
+    <div id="content">
+        <div id="cont_menu">
+            <?php
+                foreach ($dimensiones as $dimension_item):
+                    $html[$dimension_item['clave']]['contenido'] = '';
+                endforeach;
+
+                foreach ($indicadores as $indicadores_item): 
+                    $html[$indicadores_item['cve_dimension']]['contenido'] .= '
+                        <li><a href="indicadores/'.$indicadores_item["clave"].'">'.$indicadores_item["nombre"].'</a></li>';
+                endforeach;
+
+                echo '<div id="menu">';
+                foreach ($dimensiones as $dimension_item):
+                    echo '<div class="menu_section" id="dim'.$dimension_item['clave'].'"><h3>' . $dimension_item['nombre'] . '</h3> </div>';
+                    echo '<div class="menu_content"><h3>' . $html[$dimension_item['clave']]['contenido'] . '</h3> </div>';
+                endforeach;
+                echo '</div>';
+/*
+
+                foreach ($componentes as $componentes_item):
+                    $html[$componentes_item['cve_dimension']][$componentes_item['clave']]['titulo'] = $componentes_item['nombre'];
+                    $html[$componentes_item['cve_dimension']][$componentes_item['clave']]['contenido'] = '';
+                endforeach;
+
+                foreach ($indicadores as $indicadores_item): 
+                    $html[$componentes_item['cve_dimension']][$indicadores_item['cve_componente']]['contenido'] .= '
+                        <li><a href="indicadores/'.$indicadores_item["clave"].'">'.$indicadores_item["nombre"].'</a></li>';
+                endforeach;
+
+                foreach ($dimensiones as $dimensiones_item):
+                    $html[$componentes_item['cve_dimension']][$indicadores_item['cve_componente']]['contenido'] .= '
+                        <li><a href="indicadores/'.$indicadores_item["clave"].'">'.$indicadores_item["nombre"].'</a></li>';
+                endforeach;
+
+                echo '<div id="menu">';
+                foreach ($dimensiones as $dimensiones_item):
+                    echo '<div class="menu_section" id="dim'.$dimension_item['clave'].'"><h3>' . $dimension_item['nombre']. '</h3> </div>';
+                    foreach ($componentes as $componentes_item):
+                        echo '<div class="menu_section" id="dim'.$componentes_item['clave'].'"><h3>' . $html[$componentes_item['clave']]['titulo'] . '</h3> </div>';
+                        echo '<div class="menu_content"><h3>' . $html[$componentes_item['clave']]['contenido'] . '</h3> </div>';
+                    endforeach;
+                endforeach;
+                echo '</div>';
+ */
+            ?>
+        </div>
+        <div id="cont_descrip_menu">
+            <h2>Indicadores de Desarrollo del Estado de Guanajuato y sus Municipios</h2>
+<p class="texto_principal">Los indicadores son instrumentos de medición que apoyan y fundamentan la evaluación de cualquier fenómeno o temática.</p>
+<p class="texto_principal">Con la finalidad de proporcionar información que permita apoyar el conocimiento de la realidad a la que busca dar respuesta el Gobierno del Estado de Guanajuato, aquí encontrará los indicadores contemplados en las cuatro dimensiones del <a href="http://iplaneg.guanajuato.gob.mx/ped2035/documentos/RESUMEN_EJECUTIVO.pdf">Plan Estatal de Desarrollo 2035</a>: </p>
+<ul class="texto_principal">
+<li>Humano y social.</li>
+<li>Administración Pública y Estado de Derecho</li>
+<li>Economía y Competitividad</li>
+<li>Medio Ambiente y Territorio</li> 
+</ul>
+<br />
+<!--
+            <img src="<?=base_url()?>img/fondo.jpg" style="width:100%"/>
+-->
+        </div>
+    </div>
+</div>
+

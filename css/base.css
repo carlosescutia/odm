@@ -1,0 +1,289 @@
+/* CSS Document */
+@import url("intro/stylesheet.css");
+
+html, body {
+    min-height:100%;
+    height: auto !important;
+    height: 100%;
+    text-align: left;
+    margin-top: 0em;
+    margin-bottom: 0.25em;
+    font-size: 0.85em;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    font-family: "intro_bookregular" !important;
+    /*
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     */
+min-height:100%;
+height: auto !important;
+height: 100%;
+margin-bottom: -20px;
+width: 920px;
+margin: 0 auto;
+}
+
+#logo {
+    width: 76px;
+    height: 95px;
+    margin: 10px 15px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    background: white url(logo.png) no-repeat 0 0 ;
+    background-size: 65px 95px;
+    float: left;
+}
+
+#header {
+    width: 894px;
+    margin: 10px 0px 10px 0px;
+    padding: 1px 1px 1px 25px;
+    background-color: #00a7e1;
+    color: #ffffff;
+    float: left;
+}
+
+#subheader {
+    width: 894px;
+    margin: -9px 0px 10px 0px;
+    padding: 1px 1px 1px 25px;
+    background-color: #6cc3e1;
+    color: #ffffff;
+    float: left;
+}
+
+#cont_text {
+    width: 380px; 
+    height: auto !important; 
+    float:left; 
+    margin: 1px 0px 1px 30px;
+}
+
+.info_panel {
+    width: 350px;
+    background-color: #c8d7fb;
+    padding: 1px 15px 10px 15px;
+    margin: 1px 0 10px 0;
+    float: left;
+}
+
+.info_panel h4 {
+    margin: 8px 0 1px;
+    float:left;
+}
+
+.info_legend {
+    width: 480px;
+    background-color: #c8d7fb;
+    padding: 1px 15px 1px 15px;
+    margin: 10px 0 10px 0;
+    font-size: 1em;
+    float:left;
+}
+
+#fuente_datos {
+    width: 892px;
+    background-color: #c8d7fb;
+    padding: 1px 15px 1px 15px;
+    margin: 10px 0 10px 0;
+    font-size: 1em;
+    float:left;
+}
+
+#cont_menu {
+    clear: both;
+    width: 340px; 
+    height: auto !important; 
+    float:left; 
+    margin: 0;
+}
+
+#cont_descrip_menu {
+    width: 450px;
+    margin: 0 0 0 50px;
+    height: auto !important;
+    float: left;
+}
+
+#cont_map {
+    width: 510px;
+    height: auto !important;
+    float: left;
+}
+
+#map_est, #map_mun {
+    width: 100%;
+    height: 480px;
+    margin: 10px 0px 10px 0px;
+}
+
+#footer_main, #push {
+    clear: both;
+    height: 20px;   /* Height of the footer */
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 1;
+}
+
+#menu {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    min-height:100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu_section {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0 10px;
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #00a7e1;
+    outline: 0;
+    overflow: auto;
+}
+
+.menu_section:hover {
+    cursor: pointer; 
+    background-color:#44b8e1;
+}
+
+.menu_items {
+    height:300px;
+    overflow-y: auto;
+}
+
+.menu_component {
+    width: 90%;
+    margin: 0 0 0 10px;
+    padding: 5px 0 5px 8px;
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #c6dae1;
+    outline: 0;
+}
+
+.menu_content {
+    font-size: 0.85em;
+    width: 80%;
+    color: #fff;
+    padding: 0 0 0 28px;
+    margin: 0 0 15px 0;
+    border: 1px solid #fff;
+    outline: 0;
+}
+
+.sel_button {
+    background-color: #5fb507;
+    color: #fff;
+    float:left; 
+    text-align: center;
+    width: 186px;
+    height: 45px;
+    border: 1px solid #fff;
+    margin: 1px 1px 10px 1px;
+    outline: 0;
+    cursor: pointer; 
+}
+
+.sel_button_disabled {
+    background-color: #909090;
+    color: #fff;
+    float:left; 
+    text-align: center;
+    width: 186px;
+    height: 45px;
+    border: 1px solid #fff;
+    margin: 1px 1px 10px 1px;
+    outline: 0;
+}
+
+.dwn_button {
+    background-color: #ee9b52;
+    color: #fff;
+    float: left; 
+    text-align: center;
+    width: 251px;
+    height: 45px;
+    border: 1px solid #fff;
+    margin: 1px 1px 1px 1px;
+    outline: 0;
+    cursor: pointer; 
+}
+
+
+#grafico {
+    width: 890px;
+    height: 680;
+    float: left;
+}
+
+.legend_graph {
+    align: center;
+    float: center; 
+    height: 25px; 
+    width: 50%; 
+    margin: 0 auto;
+}
+
+.legend_label {
+    float: left; 
+    vertical-align: center; 
+    padding: 0px 10px 0px 2px;
+    font-size: 0.8em;
+}
+
+.legend_marker {
+    width: 15px; 
+    height:3px; 
+    float: left;
+}
+
+.texto_principal {
+    font-size: 1.5em;
+}
+
+.odm_icon {
+    width: 70px;
+}
+
+#estatus {
+    width: 200px;
+    height: 35px;
+    vertical-align: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#estatus h4 {
+    text-align: center; 
+    width: 100%
+}
+
