@@ -305,7 +305,7 @@ $(document).ready(function(){
 
 
             // crear layer openstreetmap
-            var backgUrl = 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png';
+            var backgUrl = '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
             backgAttrib = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
             var backg_est = L.tileLayer(backgUrl, {attribution: backgAttrib});
